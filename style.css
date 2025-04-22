@@ -1,0 +1,109 @@
+style.css
+:root {
+    --bg:1e1e2f;
+    --text: #f1f1f1;
+    --primary:#ff6ec4;
+    --secondary:#787ff6;
+    --highlight: #ff9a8b;
+    --box:#2e2e3f;
+    --about-box: linear-gradient(to right,#ff9a8b, #ff6ec4);
+}
+
+body {
+    font-family:'Quicksand',sans-serif;
+    background-color: var(#619ac2);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background:linear-gradient(135deg, var(--primary), var(--secondary));
+    color:rgb(11, 11, 11);
+    text-align: center;
+    padding: 3rem 1rem;
+    box-shadow: 0 4px 12px rgba(49, 104, 138, 0.4);
+}
+
+header h1 {
+    font-size:2.8rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.navbar {
+    background-color: #4c4ca1;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(141, 44, 44, 0.4);
+}
+
+.navbar a {
+    color:var(--primary);
+    margin:0 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition:all0.3s;
+}
+
+.navbar a:hover {
+    color: var(--highlight);
+}
+
+.card {
+    background-color: var(--box);
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(157, 60, 181, 0.5);
+    transition: 0.3s ease;
+}
+
+#about {
+    background: var(--about-box);
+    color: #06253b;
+    box-shadow: 0 8px 20px rgba(255, 110, 196, 0.4);
+    font-style: italic;
+    font-size:large;
+    font-weight: bold;
+}
+
+.card.hover { 
+    transform: scale(1.01);
+}
+
+.card h2 {
+    margin-top: 0;
+    border-bottom: 2px solid var(--primary);
+    display: inline-block;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+.card ul {
+    padding-left:1.2rem,
+}
+
+.card li {
+    margin-bottom: 0.6rem;
+}
+
+#contact p {
+    margin: 0.5rem 0;
+    color: var(--highlight);
+}
+
+footer {
+    background-color: #787ff6;
+    color: var(--text);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
